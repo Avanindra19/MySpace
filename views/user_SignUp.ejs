@@ -1,16 +1,20 @@
-<form action="">
+<form action="/users/create" method="post">
     <div>
         <h1>Sign Up</h1>
         <p>Please fill in this form to create an account.</p>
         <hr>
+
+        <label for="name"><b>Email</b></label>
+        <input type="text" name="name" placeholder="Enter Name" required>
+
         <label for="email"><b>Email</b></label>
-        <input type="text" name="email" placeholder="Enter Email" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
         
         <label for="pwd"><b>Password</b></label>
         <input type="text" name="pwd" placeholder="Enter Password" required>
 
-        <label for="pwd-rep"><b>Repeat Password</b></label>
-        <input type="text" name="pwd-rep" placeholder="Repeat Password" required>
+        <label for="pwd-con"><b>Confirm Password</b></label>
+        <input type="text" name="pwd-con" placeholder="Cofirm Password" required>
 
         <label><input type="checkbox" checked="checked" name="remember">Remember me</label>
 
