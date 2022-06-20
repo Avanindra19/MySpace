@@ -63,6 +63,13 @@ module.exports.createSession=function(req,res){
     return res.redirect('/');
 };
 
+module.exports.destroySession=function(req,res){
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        res.redirect('/');
+      });
+}
+
 
 // module.exports.friends=function(req,res){
 //     return res.end('<h1>Friend List</h1>');
